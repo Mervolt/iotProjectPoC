@@ -37,9 +37,7 @@ async function main(param) {
 
         // Get the contract from the network.
         const contract = network.getContract('fabcar');
-        // Evaluate the specified transaction.
-        // queryCar transaction - requires 1 argument, ex: ('queryCar', 'CAR4')
-        // queryAllCars transaction - requires no arguments, ex: ('queryAllCars')
+
         let result = undefined;
         if(param !== undefined){
             result = await contract.evaluateTransaction('queryCar', param);

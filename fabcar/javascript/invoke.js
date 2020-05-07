@@ -63,8 +63,6 @@ async function main(operation, carId, make, year, color, owner) {
 }
 
 
-console.log(process.argv.length)
-console.log(process.argv[2])
 if(process.argv.length == 2) 
     main(undefined);
 else if(process.argv.length == 4)
